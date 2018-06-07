@@ -1,6 +1,6 @@
 Amazon website user interface automation test
 
-A test script for user purchasing a product
+A testing script for users purchasing a product
 
 Automation test cases
 
@@ -8,5 +8,3 @@ Automation test cases
 2. Add a product to a shopping cart
 3. Place an order
 4. Write a review on a product
-
-Technologies used
