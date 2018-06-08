@@ -8,9 +8,9 @@ end
 
 Given(/^a user is logged in$/) do
   @browser.a(:id => "nav-link-accountList").wait_until_present.click
-  @browser.text_field(:id => 'ap_email').set('bksung0708@gmail.com')
+  @browser.text_field(:id => 'ap_email').set('abc@gmail.com')
   @browser.input(:id => 'continue').click
-  @browser.text_field(:id => 'ap_password').set('qudrmsdl1')
+  @browser.text_field(:id => 'ap_password').set('12345678')
   @browser.input(:id => 'signInSubmit').click
 end
 
