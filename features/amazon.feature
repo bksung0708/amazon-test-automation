@@ -1,23 +1,3 @@
-Amazon website user interface automation test
-
-A testing script for users purchasing a product
-
-Automation test cases
-
-1. Search for a product
-2. Add a product to a shopping cart
-3. Place an order
-4. Write a review on a product
-
-Technologies used
-
-- Cucumber
-- Ruby 2.4.0p0
-- Watir Webdriver
-
-Scenario for the automation
-
-```
 Feature: As a returning Amazon user, he/she should be able to search for a product, add a product to a shopping cart,
   place an order, and write a review on a product.
 
@@ -50,4 +30,3 @@ Feature: As a returning Amazon user, he/she should be able to search for a produ
       And writes a review in a text field
       And clicks Submit button
       Then Thanks for your review message should be displayed
-```
