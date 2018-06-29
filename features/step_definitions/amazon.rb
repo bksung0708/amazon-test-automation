@@ -27,9 +27,9 @@ Given(/^a user is logged in$/) do
   # @browser.text_field(:id => 'ap_password').set('12345678')
   # @browser.input(:id => 'signInSubmit').click
 
-  @login_page.email = 'bksung0708@gmail.com'
+  @login_page.email = 'abc@gmail.com'
   @login_page.continue_button
-  @login_page.password = 'qudrmsdl1'
+  @login_page.password = '123abcd'
   @login_page.submit_button
 end
 
