@@ -1,17 +1,26 @@
 require 'watir'
 require 'watir-scroll'
+require 'require_all'
+require 'capybara/cucumber'
+require_relative '../../lib/login_page'
+require_all 'lib'
+
 
 Given(/^a user is on www\.amazon\.com$/) do
+  # visit HomePage
   @browser = Watir::Browser.new
   @browser.goto 'www.amazon.com/'
 end
 
 Given(/^a user is logged in$/) do
   @browser.a(:id => "nav-link-accountList").wait_until_present.click
-  @browser.text_field(:id => 'ap_email').set('abc@gmail.com')
-  @browser.input(:id => 'continue').click
-  @browser.text_field(:id => 'ap_password').set('12345678')
-  @browser.input(:id => 'signInSubmit').click
+  browsers = Watir::Browser.new
+  login_page = LoginPage.new(browsers)
+  login_page.email = 'bksung0708@gmail.com'
+  # @browser.text_field(:id => 'ap_email').set('abc@gmail.com')
+  # @browser.input(:id => 'continue').click
+  # @browser.text_field(:id => 'ap_password').set('12345678')
+  # @browser.input(:id => 'signInSubmit').click
 end
 
 When(/^a user types in a product name in a search bar$/) do
