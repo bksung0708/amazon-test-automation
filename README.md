@@ -14,6 +14,7 @@ Technologies used
 - Cucumber
 - Ruby 2.4.0p0
 - Watir Webdriver
+- page-object
 
 Scenario for the automation
 
