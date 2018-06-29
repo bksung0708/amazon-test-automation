@@ -2,7 +2,7 @@ Feature: As a returning Amazon user, he/she should be able to search for a produ
   place an order, and write a review on a product.
 
   Background:
-    Given a user is on www.amazon.com
+    Given a user is on Amazon login page
     Given a user is logged in
 
     Scenario: Search for a product
