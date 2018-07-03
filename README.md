@@ -1,8 +1,8 @@
-Amazon website user interface automation test
+Amazon website user interface test automation
 
 A testing script for users purchasing a product
 
-Automation test cases
+Test automation cases
 
 1. Search for a product
 2. Add a product to a shopping cart
